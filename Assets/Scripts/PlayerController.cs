@@ -17,20 +17,27 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            if(IsMoving && !touchingDirection.IsOnWall)
+            if(CanMove)
             {
-                if(IsRunning)
+                if(IsMoving && !touchingDirection.IsOnWall)
                 {
-                    return runSpeed;
+                    if(IsRunning)
+                    {
+                        return runSpeed;
+                    } else
+                    {
+                        return walkSpeed;
+                    }
                 } else
                 {
-                    return walkSpeed;
+                    // idle
+                    return 0;
                 }
             } else
             {
-                // idle
                 return 0;
             }
+            
         }
     }
 
@@ -79,6 +86,14 @@ public class PlayerController : MonoBehaviour
                 transform.localScale *= new Vector2(-1, 1);
             }
             _isFacingRight = value;
+        }
+    }
+
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
         }
     }
 
@@ -148,9 +163,9 @@ public class PlayerController : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         // check if alive later
-        if(context.started && touchingDirection.IsGrounded)
+        if(context.started && touchingDirection.IsGrounded && CanMove)
         {
-            animator.SetTrigger(AnimationStrings.jump);
+            animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
         }
         else if(context.canceled)
@@ -160,6 +175,14 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, yVel/2);
             }
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            animator.SetTrigger(AnimationStrings.attackTrigger);
         }
     }
 }
