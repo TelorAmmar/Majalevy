@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3167cd5a8cd0144ba3510111ab3f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3
+  walkSpeed: 6
   walkStopRate: 1
   attackZone: {fileID: 7915307429962602000}
   _hasTarget: 0
