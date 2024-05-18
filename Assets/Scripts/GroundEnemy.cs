@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirection))]
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirection), typeof(Damageable))]
 public class GroundEnemy : MonoBehaviour
 {
     public float walkSpeed = 3f;
@@ -13,6 +13,7 @@ public class GroundEnemy : MonoBehaviour
     Rigidbody2D rb;
     TouchingDirection touchingDirection;
     Animator animator;
+    Damageable damageable;
 
     public enum WalkableDirection { Right, Left }
 
@@ -68,6 +69,7 @@ public class GroundEnemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         touchingDirection = GetComponent<TouchingDirection>();
         animator = GetComponent<Animator>();
+        damageable = GetComponent<Damageable>();
     }
 
     // Update is called once per frame
@@ -83,15 +85,17 @@ public class GroundEnemy : MonoBehaviour
             FlipDirection();
         }
 
-        if(CanMove)
+        if(!damageable.LockVelocity)
         {
-            rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+            if(CanMove)
+            {
+                rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
+            }
         }
-        else
-        {
-            rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
-        }
-
     }
 
     private void FlipDirection()
@@ -106,5 +110,10 @@ public class GroundEnemy : MonoBehaviour
         {
             Debug.LogError("Current walkable direction is not set to right or left");
         }
+    }
+
+    public void OnHit(int damage, Vector2 knockback)
+    {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 }

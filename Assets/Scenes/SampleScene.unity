@@ -234,9 +234,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 570169348306533433, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: _health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 570169348306533433, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: _maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 570169348306533433, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: invincibilityTime
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7033134560988566736, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -104.5
+      value: -96.6
       objectReference: {fileID: 0}
     - target: {fileID: 7033134560988566736, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
       propertyPath: m_LocalPosition.y
@@ -987,7 +999,7 @@ Transform:
   m_GameObject: {fileID: 1124208076}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.5, y: -0.33, z: -10}
+  m_LocalPosition: {x: -96.6, y: -0.33, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1490,11 +1502,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2236955786798695638, guid: 269ea7451d138634fa6b77469047f648, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -83.04
+      value: -102.52
       objectReference: {fileID: 0}
     - target: {fileID: 2236955786798695638, guid: 269ea7451d138634fa6b77469047f648, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.81
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 2236955786798695638, guid: 269ea7451d138634fa6b77469047f648, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1528,6 +1540,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4817565066920801335, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: _health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817565066920801335, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: _maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817565066920801335, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: invincibilityTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8774273137952163910, guid: 269ea7451d138634fa6b77469047f648, type: 3}
       propertyPath: m_Name
       value: GroundEnemy
@@ -1551,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6143772035266258792, guid: a15176f54130a0645b55d1cf22765b19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -104.5
+      value: -96.6
       objectReference: {fileID: 0}
     - target: {fileID: 6143772035266258792, guid: a15176f54130a0645b55d1cf22765b19, type: 3}
       propertyPath: m_LocalPosition.y
