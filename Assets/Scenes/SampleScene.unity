@@ -243,8 +243,12 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 570169348306533433, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: isInvincible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 570169348306533433, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
       propertyPath: invincibilityTime
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7033134560988566736, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1551,6 +1555,22 @@ PrefabInstance:
     - target: {fileID: 4817565066920801335, guid: 269ea7451d138634fa6b77469047f648, type: 3}
       propertyPath: invincibilityTime
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023610418519869117, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023610418519869117, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1554687
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023610418519869117, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.021
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023610418519869117, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.727
       objectReference: {fileID: 0}
     - target: {fileID: 8774273137952163910, guid: 269ea7451d138634fa6b77469047f648, type: 3}
       propertyPath: m_Name
