@@ -6,7 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirection), typeof(Damageable))]
 public class GroundEnemy : MonoBehaviour
 {
-    public float walkSpeed = 3f;
+    public float walkAcceleration = 3f;
+    public float maxSpeed = 3f;
     public float walkStopRate = 0.03f;
     public DetectionZone attackZone;
     public DetectionZone cliffDetetionZone;
@@ -103,8 +104,11 @@ public class GroundEnemy : MonoBehaviour
         if(!damageable.LockVelocity)
         {
             if(CanMove)
+                //accelerate
+                
             {
-                rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+                rb.velocity = new Vector2(
+                    Mathf.Clamp(rb.velocity.x + (walkAcceleration * walkDirectionVector.x * Time.fixedDeltaTime), -maxSpeed, maxSpeed), rb.velocity.y);
             }
             else
             {
