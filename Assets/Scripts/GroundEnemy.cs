@@ -103,7 +103,7 @@ public class GroundEnemy : MonoBehaviour
 
         if(!damageable.LockVelocity)
         {
-            if(CanMove)
+            if(CanMove && touchingDirection.IsGrounded)
                 //accelerate
                 
             {
