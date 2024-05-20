@@ -9,6 +9,7 @@ public class GroundEnemy : MonoBehaviour
     public float walkSpeed = 3f;
     public float walkStopRate = 0.03f;
     public DetectionZone attackZone;
+    public DetectionZone cliffDetetionZone;
 
     Rigidbody2D rb;
     TouchingDirection touchingDirection;
@@ -42,6 +43,7 @@ public class GroundEnemy : MonoBehaviour
     }
 
     public bool _hasTarget = false;
+    
 
     public bool HasTarget
     {
@@ -64,6 +66,14 @@ public class GroundEnemy : MonoBehaviour
         }
     }
 
+    public float attackCooldown { get
+        {
+            return animator.GetFloat(AnimationStrings.attackCooldown);
+        } private set
+        {
+            animator.SetFloat(AnimationStrings.attackCooldown, Mathf.Max(value, 0));
+        } }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -76,6 +86,11 @@ public class GroundEnemy : MonoBehaviour
     void Update()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;
+        if(attackCooldown > 0)
+        {
+            attackCooldown -= Time.deltaTime;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -116,4 +131,13 @@ public class GroundEnemy : MonoBehaviour
     {
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
+
+    public void OnCliffDetected()
+    {
+        if (touchingDirection.IsGrounded)
+        {
+            FlipDirection(); 
+        }
+    }
+    
 }
