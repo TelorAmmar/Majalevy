@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Timeline.Actions;
+//using UnityEditor.Timeline.Actions;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class ParallaxEffect : MonoBehaviour
+           
 {
+#if UNITY_EDITOR
     public Camera cam;
     public Transform followTarget;
 
@@ -37,4 +42,6 @@ public class ParallaxEffect : MonoBehaviour
 
         transform.position = new Vector3(newPosition.x, newPosition.y, startingZ);
     }
+#endif
 }
+
