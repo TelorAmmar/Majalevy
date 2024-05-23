@@ -8,10 +8,16 @@ public class Arrow : MonoBehaviour
     bool hasHit;
     public GameObject arrow;
     public GameObject hitbox;
+    public float fadeTime = 2.0f;
+    private float elapsedTime = 0f;
+    SpriteRenderer spriteRenderer;
+    Color startColor;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        startColor = spriteRenderer.color;
     }
 
     // Start is called before the first frame update
@@ -28,14 +34,25 @@ public class Arrow : MonoBehaviour
             float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
+        else
+        {
+            FadeOut();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        transform.parent = collision.transform;
         hasHit = true;
-        rb.velocity = Vector2.zero;
-        rb.isKinematic = true;
+        rb.bodyType = RigidbodyType2D.Static;
         Destroy(hitbox);
         Destroy(arrow, 2f);
+    }
+
+    void FadeOut()
+    {
+        elapsedTime += Time.deltaTime;
+        float newAlpha = startColor.a * (1 - (elapsedTime / fadeTime));
+        spriteRenderer.color = new Color(startColor.r, startColor.g, startColor.b, newAlpha);
     }
 }
