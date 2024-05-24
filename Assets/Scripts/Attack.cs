@@ -13,7 +13,11 @@ public class Attack : MonoBehaviour
 
         if(damageable != null)
         {
-            Vector2 deliveredKnockback = transform.parent.localScale.x > 0 ? knockback : new Vector2(-knockback.x, knockback.y);
+            Vector2 deliveredKnockback = knockback;
+            if(transform.parent != null)
+            {
+                deliveredKnockback = transform.parent.localScale.x > 0 ? knockback : new Vector2(-knockback.x, knockback.y);
+            }
 
             bool gotHit = damageable.Hit(attackDamage, deliveredKnockback);
             if(gotHit)
