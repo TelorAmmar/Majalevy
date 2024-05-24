@@ -271,3 +271,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 3188006181631109817}
   hitbox: {fileID: 508696769806568616}
+  fadeTime: 2

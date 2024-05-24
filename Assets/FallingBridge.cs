@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class FallingBridge : MonoBehaviour
 {
-    Animator animator;
     Rigidbody2D rb;
-    Damageable damageable;
-    Vector3 startingPosition;
+    public GameObject bridge;
 
     void Awake()
     {
-        animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        damageable = GetComponent<Damageable>();
-        Vector3 startingPosition = transform.position;
+        rb = bridge.GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
@@ -29,17 +24,11 @@ public class FallingBridge : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!damageable.IsAlive)
-        {
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            rb.gravityScale = 2f;
-        }
-        if(Mathf.Abs(transform.position.x - startingPosition.x) > 0)
-        {
-            transform.position = new Vector3(startingPosition.x, transform.position.y, transform.position.z);
-        }
-        
+        Destroy(gameObject);
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rb.gravityScale = 2f;
     }
 }
