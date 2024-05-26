@@ -12,4 +12,6 @@ public class CharacterEvents
 
     public static UnityAction<GameObject, int> charaterHealed; //character healed * amount healed
 
+    public static UnityAction<GameObject, int> characterPickArrow; //character pick arrow
+
 }

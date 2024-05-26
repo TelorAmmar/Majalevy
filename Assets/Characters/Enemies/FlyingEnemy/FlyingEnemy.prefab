@@ -352,7 +352,7 @@ MonoBehaviour:
   _maxHealth: 10
   _health: 10
   isInvincible: 0
-  invincibilityTime: 1
+  invincibilityTime: 0.1
 --- !u!95 &7104857101251125378
 Animator:
   serializedVersion: 5

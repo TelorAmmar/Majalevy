@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject damageTextPrefab;
     public GameObject healthTextPrefab;
+    public GameObject arrowTextPrefab;
         
     public Canvas gameCanvas;
 
@@ -20,12 +21,14 @@ public class UIManager : MonoBehaviour
     {
         CharacterEvents.charaterDamaged += CharacterTookDamage;
         CharacterEvents.charaterHealed += CharacterHealed;
+        CharacterEvents.characterPickArrow += CharacterPickArrow;
     }
 
     private void OnDisable()
     {
         CharacterEvents.charaterDamaged -= CharacterTookDamage;
         CharacterEvents.charaterHealed -= CharacterHealed;
+        CharacterEvents.characterPickArrow -= CharacterPickArrow;
     }
 
     public void CharacterTookDamage(GameObject character, int damageReceived) //create text damage
@@ -44,6 +47,15 @@ public class UIManager : MonoBehaviour
         TMP_Text tmpText = Instantiate(healthTextPrefab, spawnPosition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
 
         tmpText.text = healthReceived.ToString();
+    }
+
+    public void CharacterPickArrow(GameObject character, int arrowReceived)
+    {
+        Vector3 spawnPosition = Camera.main.WorldToScreenPoint(character.transform.position);
+
+        TMP_Text tmpText = Instantiate(arrowTextPrefab, spawnPosition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
+
+        tmpText.text = arrowReceived.ToString();
     }
 
     public void OnExitGame(InputAction.CallbackContext context)

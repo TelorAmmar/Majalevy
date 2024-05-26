@@ -74,4 +74,17 @@ public class ArrowPossession : MonoBehaviour
             NumberOfArrows -= 1;
         }
     }
+
+    public bool PickArrow(int arrowRestore)
+    {
+        if(NumberOfArrows < MaxArrow)
+        {
+            int maxPickArrow = Mathf.Max(MaxArrow - NumberOfArrows, 0);
+            int actualPick = Mathf.Min(maxPickArrow, arrowRestore);
+            NumberOfArrows += actualPick;
+            CharacterEvents.characterPickArrow(gameObject, actualPick);
+            return true;
+        }
+        return false;
+    }
 }
