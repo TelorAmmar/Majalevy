@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - RespawnCollider
+  - EnableArena
+  - DisableArena
   layers:
   - Default
   - TransparentFX
