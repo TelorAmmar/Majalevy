@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ArrowPossession : MonoBehaviour
 {
+    public UnityEvent<int, int> arrowChanged;
+
     [SerializeField]private int _maxArrow = 10;
+
+    
 
     public int MaxArrow
     {
@@ -29,7 +34,9 @@ public class ArrowPossession : MonoBehaviour
         set
         {
             _numberOfArrows = value;
-            if(_numberOfArrows <= 0)
+            arrowChanged?.Invoke(_numberOfArrows, _maxArrow);
+
+            if (_numberOfArrows <= 0)
             {
                 _numberOfArrows = 0;
                 HasArrow = false;
@@ -73,6 +80,7 @@ public class ArrowPossession : MonoBehaviour
         {
             NumberOfArrows -= 1;
         }
+        
     }
 
     public bool PickArrow(int arrowRestore)
@@ -84,7 +92,9 @@ public class ArrowPossession : MonoBehaviour
             NumberOfArrows += actualPick;
             CharacterEvents.characterPickArrow(gameObject, actualPick);
             return true;
+            
         }
+        
         return false;
     }
 }
