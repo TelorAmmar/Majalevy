@@ -77,12 +77,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.88074493, y: 1.3782657}
-      - {x: -0.4572897, y: 0.9548619}
-      - {x: 0.37220764, y: 0.24816}
-      - {x: 0.1299119, y: -0.5645189}
-      - {x: 1.7699904, y: -1.0415393}
-      - {x: 2.0095282, y: 0.19869184}
+    - - {x: 0.28886414, y: 1.0979012}
+      - {x: -0.7688055, y: 0.9237101}
+      - {x: -0.35985565, y: 0.076826215}
+      - {x: -0.23612356, y: -0.907187}
+      - {x: 0.73420095, y: -1.1427819}
+      - {x: 1.0282507, y: 0.16754055}
   m_UseDelaunayMesh: 0
 --- !u!114 &416316697694275615
 MonoBehaviour:
@@ -380,7 +380,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1219628726, guid: d8fa9d1ba245b8f46b892d2c329b0dda, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b6dc8f2e1b2b7745a587b00835f832e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -450,8 +450,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.043876648, y: 0.0060703754}
-  m_Size: {x: 0.857666, y: 2.3226457}
+  m_Offset: {x: -0.043876648, y: 0.055514574}
+  m_Size: {x: 0.857666, y: 2.708982}
   m_Direction: 0
 --- !u!114 &8662960290620605417
 MonoBehaviour:
