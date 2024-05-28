@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MajalevyStage2.unity
     guid: d73199e35223eef4bb5e6da86d78f514
   - enabled: 1
+    path: Assets/Scenes/MajalevyStage3.unity
+    guid: 50e20c62eb1396f45a10671e5cfdc6e8
+  - enabled: 1
     path: Assets/Scenes/QuitScene.unity
     guid: 8c1b4a5713dae114fa5bd635672804e1
   m_configObjects: {}
