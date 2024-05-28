@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 568445128d630054a8681147db593fd2
   - enabled: 1
-    path: Assets/Scenes/MainStage1.unity
+    path: Assets/Scenes/MajalevyStage1.unity
     guid: 490051f06b1c2de4a868a4e10825c6bf
+  - enabled: 1
+    path: Assets/Scenes/MajalevyStage2.unity
+    guid: d73199e35223eef4bb5e6da86d78f514
   - enabled: 1
     path: Assets/Scenes/QuitScene.unity
     guid: 8c1b4a5713dae114fa5bd635672804e1
