@@ -3777,6 +3777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelOption
       objectReference: {fileID: 0}
+    - target: {fileID: 5843297357991892443, guid: 6d9764f8ec46ef04ea25df0e958e0779, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6910790400800291443, guid: 6d9764f8ec46ef04ea25df0e958e0779, type: 3}
       propertyPath: PanelOpen
       value: 
@@ -3882,6 +3886,10 @@ PrefabInstance:
     - target: {fileID: 148746430964110177, guid: 2afed893a59a98a4e984d9ad943202dd, type: 3}
       propertyPath: m_Name
       value: PanelExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 148746430964110177, guid: 2afed893a59a98a4e984d9ad943202dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7755569448120696528, guid: 2afed893a59a98a4e984d9ad943202dd, type: 3}
       propertyPath: m_Pivot.x
