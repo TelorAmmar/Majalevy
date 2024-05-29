@@ -438,6 +438,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4b7e2328ad65a4cb6edac454c9ebf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrowChanged:
+    m_PersistentCalls:
+      m_Calls: []
   _maxArrow: 25
   _numberOfArrows: 10
 --- !u!1 &807326402181610870
