@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 244acb1ab844d8840bf25d789653d949, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 66fc4a586091e2240b7a929e900610d6, type: 3}
   volume: 1
   playOnEnter: 1
   playOnExit: 0
