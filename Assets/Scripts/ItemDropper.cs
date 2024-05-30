@@ -99,6 +99,7 @@ public class ItemDropper : MonoBehaviour
         dropItem.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         dropItem.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         dropItem.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+        dropItem.GetComponent<AudioSource>().volume = 0f;
         Destroy(dropItem, 10);
     }
 }

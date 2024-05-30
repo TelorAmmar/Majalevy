@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 273087401}
   - component: {fileID: 273087400}
   - component: {fileID: 273087399}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: EnableBossArenaTrigger
   m_TagString: EnableArena
   m_Icon: {fileID: 0}
@@ -1895,7 +1895,7 @@ GameObject:
   - component: {fileID: 712310659}
   - component: {fileID: 712310658}
   - component: {fileID: 712310657}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: DisableBossArenaTrigger
   m_TagString: DisableArena
   m_Icon: {fileID: 0}
