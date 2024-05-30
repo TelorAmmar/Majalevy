@@ -95,10 +95,10 @@ public class ItemDropper : MonoBehaviour
 
     private void DropItem()
     {
-        GameObject dropArrow = Instantiate(pickup, transform.position, transform.rotation);
-        dropArrow.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        dropArrow.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        dropArrow.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
-        Destroy(dropArrow, 10);
+        GameObject dropItem = Instantiate(pickup, transform.position, transform.rotation);
+        dropItem.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        dropItem.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        dropItem.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+        Destroy(dropItem, 10);
     }
 }
