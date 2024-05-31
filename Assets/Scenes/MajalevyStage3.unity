@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 5699747612174151884, guid: f918ce7695ca8f94d82ef4baf1b8e7bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7365368080152728006, guid: f918ce7695ca8f94d82ef4baf1b8e7bf, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
@@ -1108,6 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Arena: {fileID: 1450601997}
+  Boss: {fileID: 1109121007}
 --- !u!61 &273087400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2015,6 +2020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Arena: {fileID: 1450601997}
+  Boss: {fileID: 0}
 --- !u!61 &712310658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3173,6 +3179,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1355176142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1109121007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5699747612174151884, guid: f918ce7695ca8f94d82ef4baf1b8e7bf, type: 3}
+  m_PrefabInstance: {fileID: 26442905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124208076
 GameObject:
   m_ObjectHideFlags: 0
