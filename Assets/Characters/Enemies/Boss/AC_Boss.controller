@@ -311,7 +311,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: groundEnemy_attack
+  m_Name: boss_attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -327,7 +327,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e109e6fa6fe31684b955faf276862791, type: 2}
+  m_Motion: {fileID: 7400000, guid: 81d9ff5a5600970449b328046479994e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -340,7 +340,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: groundEnemy_run
+  m_Name: boss_run
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -354,7 +354,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a7e7b188b15dc984696ce94f5eb20cea, type: 2}
+  m_Motion: {fileID: 7400000, guid: 94433fdc0affb7744aa12dab2eb307c5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -423,12 +423,12 @@ AnimatorStateMachine:
   - {fileID: 4585216057136963574}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: 7631733599695019136}
-    second:
-    - {fileID: 1426413376004724093}
   - first: {fileID: 1294491393982995747}
     second:
     - {fileID: -4900932867098929479}
+  - first: {fileID: 7631733599695019136}
+    second:
+    - {fileID: 1426413376004724093}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 600, y: 130, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
@@ -495,7 +495,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: groundEnemy_death
+  m_Name: boss_death
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -511,7 +511,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b8624feba7492884f85bbec6e0f7c308, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1eeee8a3fe671c642b4c40c3eb51f457, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -547,7 +547,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: groundEnemy_hit
+  m_Name: boss_hit
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -564,7 +564,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 367b1dcd7127f144dbd13edcb767761a, type: 2}
+  m_Motion: {fileID: 7400000, guid: ea212eac23ad5114e9d52cdfe2727ded, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
