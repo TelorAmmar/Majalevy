@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8183286769965097339}
   - component: {fileID: 7757962856615596485}
   m_Layer: 0
-  m_Name: SpikeAttackDetection
+  m_Name: SummonDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spike: {fileID: 903280020279599479, guid: b825b5b98a2d19e4abbd9055b12c25ba, type: 3}
   player: {fileID: 0}
+  groundSummon: {fileID: 8774273137952163910, guid: 269ea7451d138634fa6b77469047f648, type: 3}
+  flyingSummon: {fileID: 5689121600569806066, guid: 51f5519a228dec648b8ce05d648ee78a, type: 3}
+  waypoints: []
   spikeCooldown: 3
+  groundSummonCooldown: 8
+  flyingSummonCooldown: 10
   _hasTarget: 0
 --- !u!114 &8183286769965097339
 MonoBehaviour:
@@ -512,7 +517,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   groundDistance: 0.05
-  wallDistance: 0.2
+  wallDistance: 1
   ceilingDistance: 0.05
   _isGrounded: 0
   _isOnWall: 0
