@@ -554,6 +554,9 @@ MonoBehaviour:
   damageableDeath:
     m_PersistentCalls:
       m_Calls: []
+  healthChanged:
+    m_PersistentCalls:
+      m_Calls: []
   _maxHealth: 20
   _health: 20
   isInvincible: 0
