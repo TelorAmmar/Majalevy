@@ -6,6 +6,7 @@ public class EnableBossArena : MonoBehaviour
 {
     public GameObject Arena;
     public GameObject Boss;
+    public GameObject Bridge;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,8 @@ public class EnableBossArena : MonoBehaviour
             Arena.SetActive(true);
             Boss.SetActive(true);
             Destroy(gameObject);
+            Bridge.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            Bridge.GetComponent<Rigidbody2D>().gravityScale = 4f;
         }
         else if(tag == "DisableArena")
         {
