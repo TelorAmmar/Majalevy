@@ -593,6 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f859234811c40644b17493a579e3768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectsToRemove: []
 --- !u!1 &7882485771249826028
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,11 +672,11 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.44866943, y: 1.1465378}
-      - {x: -0.7688055, y: 0.9237101}
-      - {x: -0.35985565, y: 0.076826215}
-      - {x: -0.25001922, y: -1.3796554}
+      - {x: -1.4637848, y: 0.9021687}
+      - {x: -1.325774, y: 0.08023846}
+      - {x: -1.3360878, y: -1.3966472}
       - {x: 0.73420095, y: -1.4137564}
-      - {x: 0.97266537, y: 0.17448862}
+      - {x: 1.0644839, y: 0.10307439}
   m_UseDelaunayMesh: 0
 --- !u!114 &3366078106319848617
 MonoBehaviour:
