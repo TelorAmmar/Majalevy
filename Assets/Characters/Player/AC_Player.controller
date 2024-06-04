@@ -740,7 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 00f2771c120731f4e9a53fb64a4e84cc, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 188af70d933368746be52c3a984ac6a7, type: 3}
   volume: 1
   playOnEnter: 1
   playOnExit: 0
@@ -861,7 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 00f2771c120731f4e9a53fb64a4e84cc, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 188af70d933368746be52c3a984ac6a7, type: 3}
   volume: 1
   playOnEnter: 1
   playOnExit: 0
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 00f2771c120731f4e9a53fb64a4e84cc, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 188af70d933368746be52c3a984ac6a7, type: 3}
   volume: 1
   playOnEnter: 1
   playOnExit: 0
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 3df556ec5186c694ebe482d5e8075498, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 25292340473c66c47a1ce68537eedc53, type: 3}
   volume: 1
   playOnEnter: 1
   playOnExit: 0
@@ -1415,8 +1415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: f9a14d5e3f41a394094f205164805fa7, type: 3}
-  volume: 2
+  soundToPlay: {fileID: 8300000, guid: 5d98d96abff0b8b4384762b3a239d6f5, type: 3}
+  volume: 1
   playOnEnter: 1
   playOnExit: 0
   playAfterDelay: 0
@@ -1712,8 +1712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: bc5319ba2f3b0214ebb4ddb9de761a80, type: 3}
-  volume: 7
+  soundToPlay: {fileID: 8300000, guid: 2303a0327e4a444498015bb8718f84ab, type: 3}
+  volume: 2
   playOnEnter: 1
   playOnExit: 0
   playAfterDelay: 0
@@ -1730,7 +1730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac671b4b7c15ad4ab279c6caa35d97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 3df556ec5186c694ebe482d5e8075498, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 25292340473c66c47a1ce68537eedc53, type: 3}
   volume: 1
   playOnEnter: 1
   playOnExit: 0
