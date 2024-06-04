@@ -4118,6 +4118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelNextStage
       objectReference: {fileID: 0}
+    - target: {fileID: 3376558188330843365, guid: a4757dab251c5f9438c32f248995568e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5015577761994685163, guid: a4757dab251c5f9438c32f248995568e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
