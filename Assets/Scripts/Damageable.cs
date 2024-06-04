@@ -9,6 +9,8 @@ public class Damageable : MonoBehaviour
     public UnityEvent damageableDeath;
     public UnityEvent<int, int> healthChanged;
 
+    public GameManagerScripts gameManager;
+
     Animator animator;
 
     [SerializeField]private int _maxHealth = 10;
@@ -42,6 +44,7 @@ public class Damageable : MonoBehaviour
             {
                 _health = 0;
                 IsAlive = false;
+                gameManager.GameOver();
             }
         }
     }
