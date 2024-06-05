@@ -4512,6 +4512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4689535322971489606, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
+      propertyPath: PausePanel
+      value: 
+      objectReference: {fileID: 959518573}
     - target: {fileID: 8481801636372003143, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
       propertyPath: PanelOpen
       value: 

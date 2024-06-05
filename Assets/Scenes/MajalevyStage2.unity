@@ -28851,6 +28851,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1496852227825184606, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2004607268}
+    - target: {fileID: 1496852227825184606, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenPanelOnly
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496852227825184606, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3187902158638118803, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -28931,6 +28943,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4689535322971489606, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
+      propertyPath: PausePanel
+      value: 
+      objectReference: {fileID: 959518573}
     - target: {fileID: 8481801636372003143, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
       propertyPath: PanelOpen
       value: 
@@ -28945,6 +28961,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3187902158638118803, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
   m_PrefabInstance: {fileID: 2004607266}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004607268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4689535322971489606, guid: 6009b0f1c4966f34a85cd0c1f6c35c6a, type: 3}
+  m_PrefabInstance: {fileID: 2004607266}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4393011055a634fab407cb456ce7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2018552235
 GameObject:
   m_ObjectHideFlags: 0

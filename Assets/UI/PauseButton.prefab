@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7655850989744835678}
   - component: {fileID: 8274515037574186141}
   - component: {fileID: 1496852227825184606}
-  - component: {fileID: 8481801636372003143}
+  - component: {fileID: 4689535322971489606}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -121,8 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8481801636372003143}
-        m_TargetAssemblyTypeName: PanelOpenOnly, Assembly-CSharp
+      - m_Target: {fileID: 4689535322971489606}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: OpenPanelOnly
         m_Mode: 1
         m_Arguments:
@@ -133,7 +133,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8481801636372003143
+--- !u!114 &4689535322971489606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 311112879879594620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b9e0bd0099d4da48b0cecd2448eced5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4393011055a634fab407cb456ce7b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanelOpen: {fileID: 0}
+  PausePanel: {fileID: 0}
