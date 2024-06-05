@@ -724,6 +724,14 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 516546165}
+    - target: {fileID: 1452019648759550489, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452019648759550489, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7033134560988566736, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -103.48
@@ -768,6 +776,18 @@ PrefabInstance:
       propertyPath: m_Sources.Array.data[0].sourceTransform
       value: 
       objectReference: {fileID: 239835335}
+    - target: {fileID: 7617084608889050616, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617084608889050616, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617084608889050616, guid: a7d222e44b7554940b276cd76e8f5a02, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
