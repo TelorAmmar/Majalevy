@@ -11,6 +11,7 @@ public class PanelOpenOnly : MonoBehaviour
         if (PanelOpen != null)
         {
             PanelOpen.SetActive(true);
+            
         }
     }
 
