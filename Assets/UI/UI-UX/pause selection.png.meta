@@ -118,7 +118,7 @@ TextureImporter:
         width: 1643
         height: 1058
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,6 +126,69 @@ TextureImporter:
       bones: []
       spriteID: daa5f85e37e4ca9448cd447528eabc50
       internalID: 967854460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause selection_1
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1010
+        width: 508
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a19dc2c13d820549ba8e8b91011bbd8
+      internalID: 769903422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause selection_2
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 443
+        width: 261
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2abbae588c8cb48934cc09a563af62
+      internalID: 1819029275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause selection_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 645
+        width: 457
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9842051c17b8f445a435cae8d1fd544
+      internalID: 875421174
       vertices: []
       indices: 
       edges: []
@@ -142,6 +205,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       pause selection_0: 1311675627
+      pause selection_1: 769903422
+      pause selection_2: 1819029275
+      pause selection_3: 875421174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
