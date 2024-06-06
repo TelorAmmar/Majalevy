@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowPickup (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8043332720939791887, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -486,6 +490,10 @@ PrefabInstance:
     - target: {fileID: 3175508496373233917, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
       propertyPath: m_Name
       value: ArrowPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043332720939791887, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -810,6 +818,10 @@ PrefabInstance:
     - target: {fileID: 3175508496373233917, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
       propertyPath: m_Name
       value: ArrowPickup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043332720939791887, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1658,6 +1670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowPickup (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8043332720939791887, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2039,6 +2055,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_Name
       value: HealthPickup (1)
@@ -2094,6 +2114,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451334536035307559, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
@@ -2909,6 +2933,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451334536035307559, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
@@ -4526,6 +4554,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_Name
       value: HealthPickup (9)
@@ -4901,6 +4933,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_Name
       value: HealthPickup (6)
@@ -5215,6 +5251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_Name
       value: HealthPickup (5)
@@ -5270,6 +5310,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451334536035307559, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
@@ -5661,6 +5705,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_Name
       value: HealthPickup
@@ -5812,6 +5860,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_Name
       value: HealthPickup (2)
@@ -5872,6 +5924,10 @@ PrefabInstance:
     - target: {fileID: 3175508496373233917, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
       propertyPath: m_Name
       value: ArrowPickup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043332720939791887, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6216,6 +6272,10 @@ PrefabInstance:
     - target: {fileID: 3175508496373233917, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
       propertyPath: m_Name
       value: ArrowPickup (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043332720939791887, guid: 8d6df85a3b2c69546afef6f3bb316ee5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28678,6 +28738,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451334536035307559, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745384717418174243, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6994718245918036305, guid: ae16851e8f960ce49bebf67bc8bc5799, type: 3}
