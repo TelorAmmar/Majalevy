@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
+    AudioManager audioManager;
     public int healthRestore = 10;
     public Vector3 spinRotationSpeed = new Vector3(0, 180, 0);
 
@@ -11,7 +12,8 @@ public class HealthPickup : MonoBehaviour
 
     private void Awake()
     {
-       pickupSource = GetComponent<AudioSource>(); 
+        pickupSource = GetComponent<AudioSource>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     // Start is called before the first frame update
     void Start()
@@ -30,7 +32,7 @@ public class HealthPickup : MonoBehaviour
             if (wasHealed)
             {
                 if (pickupSource)
-                    AudioSource.PlayClipAtPoint(pickupSource.clip, gameObject.transform.position, pickupSource.volume);
+                    audioManager.PlaySFX(audioManager.healthPickup);
 
                 Destroy(gameObject);
             }

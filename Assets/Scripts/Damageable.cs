@@ -11,10 +11,12 @@ public class Damageable : MonoBehaviour
 
     public GameManagerScripts gameManager;
 
+    AudioManager audioManager;
     Animator animator;
 
     [SerializeField]private int _maxHealth = 10;
 
+    
     public int MaxHealth
     {
         get
@@ -86,6 +88,8 @@ public class Damageable : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
+        //audioManager = FindObjectOfType<AudioManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()

@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     Vector2 moveInput;
     TouchingDirection touchingDirection;
     Damageable damageable;
+    AudioManager audioManager;
 
     public float CurrentMoveSpeed
     {
@@ -115,6 +116,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         touchingDirection = GetComponent<TouchingDirection>();
         damageable = GetComponent<Damageable>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Start is called before the first frame update
@@ -184,6 +186,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+            audioManager.PlaySFX(audioManager.jump);
         }
         else if(context.canceled)
         {
@@ -200,11 +203,13 @@ public class PlayerController : MonoBehaviour
         if(context.started)
         {
             animator.SetTrigger(AnimationStrings.attackTrigger);
+            //audioManager.PlaySFX(audioManager.playerAttack1);
         }
     }
 
     public void OnHit(int damage, Vector2 knockback)
     {
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+        audioManager.PlaySFX(audioManager.hit);
     }
 }

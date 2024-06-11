@@ -16,6 +16,7 @@ public class GroundEnemy : MonoBehaviour
     TouchingDirection touchingDirection;
     Animator animator;
     Damageable damageable;
+    AudioManager audioManager;
 
     public enum WalkableDirection { Right, Left }
 
@@ -81,6 +82,7 @@ public class GroundEnemy : MonoBehaviour
         touchingDirection = GetComponent<TouchingDirection>();
         animator = GetComponent<Animator>();
         damageable = GetComponent<Damageable>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -134,6 +136,7 @@ public class GroundEnemy : MonoBehaviour
     public void OnHit(int damage, Vector2 knockback)
     {
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+        audioManager.PlaySFX(audioManager.hit);
     }
 
     public void OnCliffDetected()

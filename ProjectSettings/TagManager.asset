@@ -7,6 +7,7 @@ TagManager:
   - RespawnCollider
   - EnableArena
   - DisableArena
+  - Audio
   layers:
   - Default
   - TransparentFX
